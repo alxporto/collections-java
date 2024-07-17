@@ -51,13 +51,13 @@ public class ContactBook {
   }
 
   public static void main(String[] args) {
-    //creating an instance of contactagenda class
+    //creating an instance of contactbook class
     ContactBook contactBook = new ContactBook();
 
     //showing the contacts in the set (must be empty)
     contactBook.showContacts();
 
-    //adding the contacts to the agenda
+    //adding the contacts to the contact book
     contactBook.addContact("Joao", 123456789);
     contactBook.addContact("Maria", 987654321);
     contactBook.addContact("Maria Fernandes", 55555555);
@@ -65,7 +65,7 @@ public class ContactBook {
     contactBook.addContact("Fernando", 77778888);
     contactBook.addContact("Carolina", 55555555);
 
-    //displaying the contacts in agenda
+    //displaying the contacts in contact book
     contactBook.showContacts();
 
     //searching contacts by name
@@ -75,7 +75,7 @@ public class ContactBook {
     Contact updatedPhoneNumber = contactBook.updatePhoneNumber("Carolina", 44443333);
     System.out.println("Updated phone number of a contact: " + updatedPhoneNumber);
 
-    //showing the updated contacts in the agenda
+    //showing the updated contacts in the contact book
     System.out.println("Contact Book after update");
     contactBook.showContacts();
   }
